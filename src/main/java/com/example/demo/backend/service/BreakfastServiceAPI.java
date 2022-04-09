@@ -28,7 +28,7 @@ public class BreakfastServiceAPI  {
         boolean test = false;
 
         for (Breakfast t : list){
-            test = Objects.equals(t.getBreakfastItem(), breakfast.getBreakfastItem());
+            test = Objects.equals(t.getBreakfastItem(), breakfast.getBreakfastItem()) || Objects.equals(t.getCpf(),breakfast.getCpf());
         }
 
         if(!test && breakfast.getCpf().length()==11){

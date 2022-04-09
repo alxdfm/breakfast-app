@@ -24,7 +24,7 @@ public class HomeView extends VerticalLayout {
 
         add(
                 new H1("Breakfast List"),
-                new H5("The Breakfast Item cannot be repeated and the CPF need 11 numbers!"),
+                new H5("The Breakfast Item and CPF cannot be repeated and the CPF need 11 numbers!"),
                 crud,
                 new HorizontalLayout(
                         new Button("API Rest Page", ClickEvent -> UI.getCurrent().navigate("/api/rest")),
